@@ -22,8 +22,11 @@ After running the commands above, you can use the `dotfiles` alias as if it was 
 $ dotfiles status
 $ dotfiles add ~/.bashrc
 $ dotfiles commit -m "add .bashrc"
+$ dotfiles remote add $GITHUB_REPO_URL
 $ dotfiles push
 ```
+
+Note: the `$GITHUB_REPO_URL` is the repository you want to push your configuration files to.
  
 # Installing the `.dotfiles`
  
@@ -37,10 +40,14 @@ $ nano dotfiles.sh
 ```
  
 These are the contents of the `dotfiles.sh`, copy paste it into the `nano` window and save changes with `CTRL+X`, `Y`, and `ENTER`.
+
+Note: this script will checkout the code specified in the `GITHUB_REPO_URL` with a specific `--branch <name>`. You may change the `--branch <name>` to the branch where your desired dotfiles are in the specified `$GITHUB_REPO_URL`.
  
 ```bash
 #!/usr/bin/bash
-git clone --bare https://github.com/Luzefiru/.dotfiles.git $HOME/.dotfiles
+GITHUB_REPO_URL=https://github.com/Luzefiru/.dotfiles.git # change this to the $GITHUB_REPO_URL you used earlier
+
+git clone --bare --branch linux $GITHUB_REPO_URL $HOME/.dotfiles
  
 function dotfiles {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
