@@ -72,10 +72,17 @@ Finally, we run the newly created script.
 ```bash
 $ ./dotfiles.sh
 ```
- 
-If you followed all the steps properly, you should be able to use the `dotfiles` alias once the script above is run.
+
+# Wrap Up
+
+If you followed all the steps properly and your `$HOME` is the same as your new machine, you should be able to use the `dotfiles` alias once the script above is run.
+
+> Note: otherwise, if you are getting a `fatal: not a git repository: '/home/user/.dotfiles/'`, you'll need to edit your shell's dotfile configuration to change the `alias` via the commands below:
  
 ```bash
+$ unalias dotfiles
+$ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
 $ dotfiles status
 $ dotfiles add .vimrc
 $ dotfiles commit -m "add .kde"
