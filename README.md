@@ -1,8 +1,28 @@
 # .dotfiles
  
 My backed up configurations for my ~/.dotfiles, along with a setup guide.
+
+# Table of Contents
+
+- [TODO](https://github.com/Luzefiru/.dotfiles/tree/main#todo)
+- [Setting Up .dotfiles](https://github.com/Luzefiru/.dotfiles/tree/main#setting-up-dotfiles)
+   - [Creating a New Remote Repository](https://github.com/Luzefiru/.dotfiles/tree/main#creating-a-new-remote-repository)
+   - [Installation On New Machines](https://github.com/Luzefiru/.dotfiles/tree/main#installation-on-new-machines)
+   - [Wrap Up](https://github.com/Luzefiru/.dotfiles/tree/main#wrap-up)
+- [Resources](https://github.com/Luzefiru/.dotfiles/tree/main#resources)
+
+# TODO
+
+- add bash scripts for installing & setting up development software and environment
+- add VSCode config files
+- add Desktop Environment config files
+- research on other important config files to back up
+
+# Setting Up .dotfiles
+
+This section focuses on setting up and pushing to a remote a `~/.dotfiles/ repository along with how to pull from it on a fresh machine.
  
-# Starting From Scratch
+## Creating a New Remote Repository
  
 We create add a `dotfiles` alias to `.bashrc` and `.zshrc` to allow us to use `/usr/bin/git` with our target `--git-dir` and `--work-tree`.
  
@@ -28,7 +48,7 @@ $ dotfiles push
 
 Note: the `$GITHUB_REPO_URL` is the repository you want to push your configuration files to.
  
-# Installing the `.dotfiles`
+## Installation On New Machines
  
 We create a [Bash Script](https://devhints.io/bash) to automatically clone this repository, create a backup of the previous dot files (if there are any conflics), then checks out the bare repository to load the files into the system.
  
@@ -73,7 +93,7 @@ Finally, we run the newly created script.
 $ ./dotfiles.sh
 ```
 
-# Wrap Up
+## Wrap Up
 
 If you followed all the steps properly and your `$HOME` is the same as your new machine, you should be able to use the `dotfiles` alias once the script above is run.
 
