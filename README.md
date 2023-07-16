@@ -1,6 +1,6 @@
 # .dotfiles
  
-My backed up configurations for my ~/.dotfiles, along with a setup guide.
+A remote backup repository containing my `~/.dotfiles`, along with a guide to spin up my development environment in any machine.
 
 # Table of Contents
 
@@ -20,7 +20,7 @@ My backed up configurations for my ~/.dotfiles, along with a setup guide.
 
 # Setting Up .dotfiles
 
-This section focuses on setting up and pushing to a remote a `~/.dotfiles/ repository along with how to pull from it on a fresh machine.
+This section focuses on setting up and pushing to a remote a `~/.dotfiles/` repository along with how to pull from it with a fresh machine.
  
 ## Creating a New Remote Repository
  
@@ -50,7 +50,7 @@ Note: the `$GITHUB_REPO_URL` is the repository you want to push your configurati
  
 ## Installation On New Machines
  
-We create a [Bash Script](https://devhints.io/bash) to automatically clone this repository, create a backup of the previous dot files (if there are any conflics), then checks out the bare repository to load the files into the system.
+We create a [Bash Script](https://devhints.io/bash) to automatically clone this repository, create a backup of the previous dot files (if there are any conflics), and checkout the bare repository to load the files into the system.
  
 ```bash
 $ cd ~
@@ -97,7 +97,7 @@ $ ./dotfiles.sh
 
 If you followed all the steps properly and your `$HOME` is the same as your new machine, you should be able to use the `dotfiles` alias once the script above is run.
 
-> Note: otherwise, if you are getting a `fatal: not a git repository: '/home/user/.dotfiles/'`, you'll need to edit your shell's dotfile configuration to change the `alias` via the commands below:
+> Note: `fatal: not a git repository: '/home/user/.dotfiles/'`, means your previous `$HOME` does not match the new machine, so we need to rebind the `alias dotfiles` via the commands below.
  
 ```bash
 $ unalias dotfiles
