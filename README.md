@@ -6,7 +6,7 @@ My backed up configurations for my ~/.dotfiles, along with a setup guide.
  
 We create add a `dotfiles` alias to `.bashrc` and `.zshrc` to allow us to use `/usr/bin/git` with our target `--git-dir` and `--work-tree`.
  
-Note: the `$HOME/.dotfiles` directory will contain the [Git Bare Repository](https://stackoverflow.com/questions/5540883/whats-the-practical-difference-between-a-bare-and-non-bare-repository).
+> Note: the `$HOME/.dotfiles` directory will contain the [Git Bare Repository](https://stackoverflow.com/questions/5540883/whats-the-practical-difference-between-a-bare-and-non-bare-repository).
  
 ```bash
 $ bash
@@ -41,7 +41,7 @@ $ nano dotfiles.sh
  
 These are the contents of the `dotfiles.sh`, copy paste it into the `nano` window and save changes with `CTRL+X`, `Y`, and `ENTER`.
 
-Note: this script will checkout the code specified in the `GITHUB_REPO_URL` with a specific `--branch <name>`. You may change the `--branch <name>` to the branch where your desired dotfiles are in the specified `$GITHUB_REPO_URL`.
+> Note: this script will checkout the code specified in the `GITHUB_REPO_URL` with a specific `--branch <name>`. You may change the `--branch <name>` to the branch where your desired dotfiles are in the specified `$GITHUB_REPO_URL` [from the previous section](https://github.com/Luzefiru/.dotfiles/blob/main/README.md#starting-from-scratch).
  
 ```bash
 #!/usr/bin/bash
@@ -73,7 +73,7 @@ Finally, we run the newly created script.
 $ ./dotfiles.sh
 ```
  
-We should be able to use the `dotfiles` alias once the script above is run.
+If you followed all the steps properly, you should be able to use the `dotfiles` alias once the script above is run.
  
 ```bash
 $ dotfiles status
