@@ -41,7 +41,7 @@ $ nano dotfiles.sh
  
 These are the contents of the `dotfiles.sh`, copy paste it into the `nano` window and save changes with `CTRL+X`, `Y`, and `ENTER`.
 
-> Note: this script will checkout the code specified in the `GITHUB_REPO_URL` with a specific `--branch <name>`. You may change the `--branch <name>` to the branch where your desired dotfiles are in the specified `$GITHUB_REPO_URL` [from the previous section](https://github.com/Luzefiru/.dotfiles/blob/main/README.md#starting-from-scratch).
+> Note: this script will checkout the code specified in the `GITHUB_REPO_URL` with a specific `--branch <name>`. You may change the `--branch <name>` to the branch where your desired dotfiles are in the specified `$GITHUB_REPO_URL` [from the previous section](https://github.com/Luzefiru/.dotfiles/tree/main#starting-from-scratch).
  
 ```bash
 #!/usr/bin/bash
