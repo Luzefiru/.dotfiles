@@ -9,14 +9,15 @@ A remote backup repository containing my `~/.dotfiles`, along with a guide to sp
    - [Creating a New Remote Repository](https://github.com/Luzefiru/.dotfiles/tree/main#creating-a-new-remote-repository)
    - [Installation On New Machines](https://github.com/Luzefiru/.dotfiles/tree/main#installation-on-new-machines)
    - [Wrap Up](https://github.com/Luzefiru/.dotfiles/tree/main#wrap-up)
+- [Installing Packages](https://github.com/Luzefiru/.dotfiles/tree/main#installing-packages)
 - [Resources](https://github.com/Luzefiru/.dotfiles/tree/main#resources)
 
 # TODO
 
-- add bash scripts for installing & setting up development software and environment
-- add VSCode config files
-- add Desktop Environment config files
-- research on other important config files to back up
+- [X] ~add bash scripts for installing & setting up development software and environment~
+- [ ] add VSCode config files
+- [ ] add Desktop Environment config files
+- [ ] research on other important config files to back up
 
 # Setting Up .dotfiles
 
@@ -108,7 +109,18 @@ $ dotfiles add .vimrc
 $ dotfiles commit -m "add .kde"
 $ dotfiles push
 ```
- 
+
+# Installing Packages
+
+Each branch contains an `install.sh` script on the home directory.
+
+To install the applications listed on the branch's `README.md`, simply run:
+
+```bash
+$ cd ~
+$ ./install.sh
+```
+
 # Resources
  
 - [Dotfiles: Best Way to Store in a Bare Git Repository](https://www.atlassian.com/git/tutorials/dotfiles)
