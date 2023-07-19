@@ -112,12 +112,12 @@ $ dotfiles push
 
 # Installing Packages
 
-Each branch contains an `install.sh` script on the home directory.
+Each branch contains an `~/.github/install.sh` script.
 
 To install the applications listed on the branch's `README.md`, simply run:
 
 ```bash
-$ cd ~
+$ cd ~/.github/
 $ ./install.sh
 ```
 
