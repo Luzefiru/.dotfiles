@@ -1,0 +1,9 @@
+[user]
+	name = Ian de Jesus
+	email = ian.deejay.iv@gmail.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[pull]
+	rebase = false
