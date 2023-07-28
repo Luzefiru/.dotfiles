@@ -14,10 +14,8 @@ A remote backup repository containing my `~/.dotfiles`, along with a guide to sp
 
 # TODO
 
-- [X] ~add bash scripts for installing & setting up development software and environment~
-- [ ] add VSCode config files
-- [ ] add Desktop Environment config files
-- [ ] research on other important config files to back up
+- [] Finish my stable riced Arch installation
+- [] Create a script to reinstall my system from a new `archinstall`.
 
 # Setting Up .dotfiles
 
