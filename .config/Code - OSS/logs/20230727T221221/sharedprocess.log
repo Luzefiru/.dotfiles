@@ -1,0 +1,3 @@
+2023-07-27 22:12:23.899 [info] Started initializing default profile extensions in extensions installation folder. file:///home/zefiru/.vscode-oss/extensions
+2023-07-27 22:12:24.123 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/zefiru/.vscode-oss/extensions Unable to create file 'vscode-userdata:/home/zefiru/.vscode-oss/extensions/extensions.json' that already exists when overwrite flag is not set
+2023-07-27 22:12:24.123 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/zefiru/.vscode-oss/extensions

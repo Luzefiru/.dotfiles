@@ -1,0 +1,5 @@
+2023-07-28 19:48:49.531 [info] update#ctor - updates are disabled as there is no update URL
+2023-07-28 19:48:57.211 [warning] No ptyHost heartbeat after 6 seconds
+2023-07-28 19:49:04.808 [info] Extension host with pid 983 exited with code: 0, signal: unknown.
+2023-07-28 19:49:04.825 [error] [UtilityProcessWorker]: terminated unexpectedly with code 15, signal: unknown
+2023-07-28 19:49:04.826 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 986]: crashed with code 15 and reason 'killed'
