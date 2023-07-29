@@ -111,9 +111,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zshalias dotfiles='/usr/bin/git --git-dir=/home/zefiru/.dotfiles/ --work-tree=/home/zefiru'
-
 # Extra lines from scripts
 alias dotfiles='/usr/bin/git --git-dir=/home/zefiru/.dotfiles/ --work-tree=/home/zefiru'
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
