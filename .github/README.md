@@ -11,14 +11,20 @@ A remote backup repository containing my `~/.dotfiles`, along with a guide to sp
 # TODO
 
 - [ ] Rice my Kubuntu.
+- [ ] Create `pkglist.txt` and create a more descriptive install script.
+- [ ] Split script into knowledge domains and composite them into 1 script.
 
 # Installation
 
+The main branch was made to bootstrap myself whenever I create a new Kubuntu machine.
+
+Running the script should give me the necessary applications for development and minimal ricing.
+
 ```bash
 $ cd ~
-$ curl -XO https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/install.sh
-$ sudo chmod u+x install.sh
-$ sudo install.sh
+$ curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/install.sh
+$ sudo chmod u+x ./install.sh
+$ sudo ./install.sh
 ```
 
 # Troubleshooting
