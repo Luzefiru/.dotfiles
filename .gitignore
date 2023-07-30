@@ -1,28 +1,20 @@
 # blacklist
 * 
-.oh-my-zsh
 
 # whitelist directories to scan
 !*/
 
 # whitelist
-!.gitignore
+!./.gitignore
 !.github
 !.gitconfig
-!.vscode/extensions
-!.bashrc
-!.zshrc
-!.p10k.zsh
-
-# cosmetics
-!.config/neofetch/*
-
-# fonts
-!.local/share/fonts/*
 
 # konsave KDE Plasma config files
 !.config/konsave/**
 
-# konsole
+# fonts
+!.local/share/fonts/*
+
+# konsole themes
 !.local/share/konsole/*
 !.config/konsolerc
