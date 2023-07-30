@@ -68,11 +68,23 @@ save:
             # CUSTOM ~/.config FILES
             - neofetch
 
+    home-configs:
+        location: "$HOME"
+        entries:
+            - .bashrc
+            - .zshrc
+            - .p10k.zsh
+
     app_layouts:
         location: "$HOME/.local/share/kxmlgui5"
         entries:
             - dolphin
             - konsole
+
+    code oss:
+        location: "$CONFIG_DIR/Code - OSS/User/"
+        entries:
+            - settings.json
 
     # Here are a few examples of how you can add more stuff to back up.
     # Uncomment these lines if you want.
@@ -80,18 +92,6 @@ save:
     #     location: "$HOME/.mozilla/firefox/${ENDS_WITH='.default-release'}"
     #     entries:
     #         - chrome # for firefox customizations
-
-    code oss:
-        location: "$CONFIG_DIR/Code - OSS/User/"
-        entries:
-            - settings.json
-
-    dotfiles:
-        location: "$HOME"
-        entries:
-            - .bashrc
-            - .zshrc
-            - .p10k.zsh
 
 
 # The following files will only be used for exporting and importing.
