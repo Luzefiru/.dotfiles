@@ -20,8 +20,8 @@
 # fonts
 !.local/share/fonts/*
 
-# kde
-!.config/kdeglobals
+# konsave KDE Plasma config files
+!.config/konsave/*
 
 # konsole
 !.local/share/konsole/*
