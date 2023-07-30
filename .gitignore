@@ -6,8 +6,8 @@
 # whitelist
 !.gitignore
 !.github
-!.local/share/fonts
-!.local/share/konsole
+!.local/share/fonts/*
+!.local/share/konsole/*
 !.vscode/extensions
 !.bashrc
 !.gitconfig
