@@ -1,15 +1,25 @@
 # blacklist
 * 
 .oh-my-zsh
+
 # whitelist directories to scan
 !*/
+
 # whitelist
 !.gitignore
 !.github
-!.local/share/fonts/*
-!.local/share/konsole/*
+!.gitconfig
 !.vscode/extensions
 !.bashrc
-!.gitconfig
-!.p10k.zsh
 !.zshrc
+!.p10k.zsh
+
+# fonts
+!.local/share/fonts/*
+
+# kde
+!.config/kdeglobals
+
+# konsole
+!.local/share/konsole/*
+!.config/konsolerc
