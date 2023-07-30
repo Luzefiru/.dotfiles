@@ -14,17 +14,18 @@ A remote backup repository containing my `~/.dotfiles`, along with a guide to sp
 - [ ] Create `pkglist.txt` and create a more descriptive install script.
 - [ ] Split script into knowledge domains and composite them into 1 script.
 
-# Installation
+# Bare Repository Installation
 
 The main branch was made to bootstrap myself whenever I create a new Kubuntu machine.
 
-Running the script should give me the necessary applications for development and minimal ricing.
+Running the script will sync my machine with the remote repository and allow me to use [Konsave](https://github.com/Prayag2/konsave) to import and use any profile from the `~/.config/konsave/profiles/<profile>/<profile>.knsv` file.
 
 ```bash
 $ cd ~
 $ curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/install.sh
 $ sudo chmod u+x ./install.sh
 $ sudo ./install.sh
+$ reboot # to enable aliases
 ```
 
 # Troubleshooting
