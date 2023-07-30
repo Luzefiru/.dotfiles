@@ -21,7 +21,7 @@
 !.local/share/fonts/*
 
 # konsave KDE Plasma config files
-!.config/konsave/*
+!.config/konsave/**
 
 # konsole
 !.local/share/konsole/*
