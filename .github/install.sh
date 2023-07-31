@@ -7,7 +7,9 @@ sudo apt install curl -y
 
 curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/index.sh
 curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/setup-dotfiles.sh
+curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/clean-up.sh
 
-chmod u+x index.sh setup-dotfiles.sh
+chmod u+x index.sh setup-dotfiles.sh clean-up.sh
 
 ./index.sh
+./clean-up.sh
