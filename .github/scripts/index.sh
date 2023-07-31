@@ -7,7 +7,7 @@ echo
 echo "  __                                     ___                           "
 echo " /\ \                                  /'___\  __                      "
 echo " \ \ \       __  __   ____       __   /\ \__/ /\_\    _ __   __  __    "
-echo "  \ \ \  __ /\ \/\ \ /\_ ,`\   /'__`\ \ \ ,__\\/\ \  /\`'__\/\ \/\ \   "
+echo "  \ \ \  __ /\ \/\ \ /\_ ,'\   /'__'\ \ \ .__\\/\ \  /\ '__\/\ \/\ \   "
 echo "   \ \ \L\ \\ \ \_\ \\/_/  /_ /\  __/  \ \ \_/ \ \ \ \ \ \/ \ \ \_\ \  "
 echo "    \ \____/ \ \____/  /\____\\ \____\  \ \_\   \ \_\ \ \_\  \ \____/  "
 echo "     \/___/   \/___/   \/____/ \/____/   \/_/    \/_/  \/_/   \/___/   "                                                                
@@ -29,7 +29,7 @@ echo "[0] INITIALIZING APT PACKAGE MANAGER"
 echo
 
 cd $HOME
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 
 echo
 echo "Done!"
@@ -68,7 +68,7 @@ echo "INSTALLING: brave-browser"
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
-sudo apt install brave-browser
+sudo apt install -y brave-browser
 
 echo
 echo "Done!"
@@ -85,7 +85,7 @@ sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
 sudo apt update
-sudo apt install code
+sudo apt install -y code
 
 echo "INSTALLING: docker"
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -96,7 +96,7 @@ echo \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
-sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 PKGS=(
         'nodejs'                # javascript runtime engine
