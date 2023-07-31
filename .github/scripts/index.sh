@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # this script was heavily inspired by the ArchMatic post-installation setup script: https://github.com/rickellis/ArchMatic
 
 echo
