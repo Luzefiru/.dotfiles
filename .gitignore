@@ -6,7 +6,7 @@
 
 # whitelist
 !./.gitignore
-!.github
+!.github/**
 !.gitconfig
 
 # konsave KDE Plasma config files
