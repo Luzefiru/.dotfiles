@@ -157,7 +157,7 @@ for PKG in "${PKGS[@]}"; do
 done
 
 echo "INSTALLING: oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 echo "INSTALLING: p10k"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 
@@ -182,6 +182,10 @@ fc-cache -f -v                  # refresh fonts
 echo
 echo "Done!"
 echo
+
+echo
+echo "Input your password to change default shell to zsh."
+sudo chsh -s /usr/bin/sh
 
 echo
 echo "WARNING: System will now reboot to apply shell changes."
