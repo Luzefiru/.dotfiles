@@ -171,7 +171,6 @@ echo
 
 python3 -m venv ~/.venv
 source ~/.venv/bin/activate
-which python3 # TODO: delete this line after successful run
 python -m pip install konsave
 
 dotfiles pull
@@ -185,17 +184,8 @@ echo
 
 echo
 echo "Input your password to change default shell to zsh."
-sudo chsh -s /usr/bin/sh
+chsh -s /usr/bin/zsh
 
 echo
-echo "WARNING: System will now reboot to apply shell changes."
-read -p "Do you want to proceed? (y/n) " yn
-
-case $yn in 
-	y ) echo Proceeding with reboot...;;
-	n ) echo Exiting ...;
-		exit;;
-	* ) echo Invalid response. Exiting...;
-		exit 1;;
-
-sudo reboot
+echo "Done! You must reboot your computer to apply all changes."
+echo
