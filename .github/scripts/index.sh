@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 # this script was heavily inspired by the ArchMatic post-installation setup script: https://github.com/rickellis/ArchMatic
+THEME=dev # TODO: make prompt to select Konsave theme until user inputs a valid theme
 
 echo
 echo
-echo ██╗     ██╗   ██╗███████╗███████╗███████╗██╗██████╗ ██╗   ██╗
-echo ██║     ██║   ██║╚══███╔╝██╔════╝██╔════╝██║██╔══██╗██║   ██║
-echo ██║     ██║   ██║  ███╔╝ █████╗  █████╗  ██║██████╔╝██║   ██║
-echo ██║     ██║   ██║ ███╔╝  ██╔══╝  ██╔══╝  ██║██╔══██╗██║   ██║
-echo ███████╗╚██████╔╝███████╗███████╗██║     ██║██║  ██║╚██████╔╝
-echo ╚══════╝ ╚═════╝ ╚══════╝╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝ 
+echo  __                                     ___                         
+echo /\ \                                  /'___\  __                    
+echo \ \ \       __  __   ____       __   /\ \__/ /\_\    _ __   __  __  
+echo  \ \ \  __ /\ \/\ \ /\_ ,`\   /'__`\ \ \ ,__\\/\ \  /\`'__\/\ \/\ \ 
+echo   \ \ \L\ \\ \ \_\ \\/_/  /_ /\  __/  \ \ \_/ \ \ \ \ \ \/ \ \ \_\ \
+echo    \ \____/ \ \____/  /\____\\ \____\  \ \_\   \ \_\ \ \_\  \ \____/
+echo     \/___/   \/___/   \/____/ \/____/   \/_/    \/_/  \/_/   \/___/                                                                    
 echo
 echo
 echo "WARNING: This script will install & configure your Kubuntu system."
@@ -142,7 +144,29 @@ echo "Done!"
 echo
 
 echo
-echo "[6] CONFIGURING KDE DESKTOP THEME"
+echo "[6] CUSTOMIZING SHELL"
+echo
+
+PKGS=(
+        'zsh'              # zsh interpreter
+)
+
+for PKG in "${PKGS[@]}"; do
+    echo "INSTALLING: ${PKG}"
+    sudo apt install -y "$PKG"
+done
+
+echo "INSTALLING: oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "INSTALLING: p10k"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+
+echo
+echo "Done!"
+echo
+
+echo
+echo "[7] CONFIGURING KDE DESKTOP THEME"
 echo
 
 python3 -m venv ~/.venv
@@ -150,6 +174,24 @@ source ~/.venv/bin/activate
 which python3 # TODO: delete this line after successful run
 python -m pip install konsave
 
+dotfiles pull
+dotfiles reset --hard
+konsave -a $THEME               # Konsave theme
+fc-cache -f -v                  # refresh fonts
+
 echo
 echo "Done!"
 echo
+
+echo
+echo "WARNING: System will now reboot to apply shell changes."
+read -p "Do you want to proceed? (y/n) " yn
+
+case $yn in 
+	y ) echo Proceeding with reboot...;;
+	n ) echo Exiting ...;
+		exit;;
+	* ) echo Invalid response. Exiting...;
+		exit 1;;
+
+sudo reboot
