@@ -14,7 +14,7 @@ A remote backup repository containing my `~/.dotfiles`, along with a guide to sp
 - [ ] Create `pkglist.txt` and create a more descriptive install script.
 - [ ] Split script into knowledge domains and composite them into 1 script.
 
-# Bare Repository Installation
+# Installation
 
 The main branch was made to bootstrap myself whenever I create a new Kubuntu machine.
 
@@ -24,8 +24,8 @@ Running the script will sync my machine with the remote repository and allow me 
 $ cd ~
 $ curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/install.sh
 $ sudo chmod u+x ./install.sh
-$ sudo ./install.sh
-$ reboot # to enable aliases
+$ ./install.sh
+$ reboot # to enable configs
 ```
 
 # Troubleshooting
