@@ -7,7 +7,7 @@ sudo apt install curl -y
 
 curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/index.sh
 curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/setup-dotfiles.sh
-curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/clean-up.sh
+curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/post-install.sh
 
 chmod u+x index.sh setup-dotfiles.sh post-install.sh
 
