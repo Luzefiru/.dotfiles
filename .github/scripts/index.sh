@@ -182,7 +182,6 @@ function dotfiles {
 dotfiles pull
 dotfiles reset --hard
 
-source ~/.venv/bin/activate
 konsave -a dev
 konsave -a $THEME               # Konsave theme
 fc-cache -f -v                  # refresh fonts
