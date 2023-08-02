@@ -174,8 +174,18 @@ echo
 python3 -m venv ~/.venv
 source ~/.venv/bin/activate
 python -m pip install konsave
-source .bashrc
+
+function dotfiles {
+   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+}
+
 dotfiles pull
+dotfiles reset --hard
+
+source ~/.venv/bin/activate
+konsave -a dev
+konsave -a $THEME               # Konsave theme
+fc-cache -f -v                  # refresh fonts
 
 echo
 echo "Done!"
@@ -186,5 +196,5 @@ echo "Input your password to change default shell to zsh."
 chsh -s /usr/bin/zsh
 
 echo
-echo "Done! You must reboot your computer then run ./post-install.sh"
+echo "Done! You must reboot your computer to finalize the changes."
 echo
