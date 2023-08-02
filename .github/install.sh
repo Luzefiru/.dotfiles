@@ -9,7 +9,6 @@ curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/script
 curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/setup-dotfiles.sh
 curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/scripts/clean-up.sh
 
-chmod u+x index.sh setup-dotfiles.sh clean-up.sh
+chmod u+x index.sh setup-dotfiles.sh post-install.sh
 
 ./index.sh
-./clean-up.sh

@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # this script was heavily inspired by the ArchMatic post-installation setup script: https://github.com/rickellis/ArchMatic
-THEME=dev # TODO: make prompt to select Konsave theme until user inputs a valid theme
 
 echo
 echo
@@ -169,17 +168,13 @@ echo "Done!"
 echo
 
 echo
-echo "[7] CONFIGURING KDE DESKTOP THEME"
+echo "[7] DOWNLOADING KDE DESKTOP THEME & FONTS"
 echo
 
 python3 -m venv ~/.venv
 source ~/.venv/bin/activate
 python -m pip install konsave
-
 dotfiles pull
-dotfiles reset --hard
-konsave -a $THEME               # Konsave theme
-fc-cache -f -v                  # refresh fonts
 
 echo
 echo "Done!"
@@ -190,5 +185,5 @@ echo "Input your password to change default shell to zsh."
 chsh -s /usr/bin/zsh
 
 echo
-echo "Done! You must reboot your computer to apply all changes."
+echo "Done! You must reboot your computer then run ./post-install.sh"
 echo

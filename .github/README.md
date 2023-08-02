@@ -1,5 +1,5 @@
 # .dotfiles
- 
+
 A remote backup repository containing my `~/.dotfiles`, along with a guide to spin up my development environment in any machine.
 
 # Table of Contents
@@ -24,10 +24,11 @@ Running the script will sync my machine with the remote repository and allow me 
 $ cd ~
 $ curl -O https://raw.githubusercontent.com/Luzefiru/.dotfiles/main/.github/install.sh
 $ sudo chmod u+x ./install.sh
-$ ./install.sh
-$ reboot # to enable configs
+$ ~/install.sh        # core installation & downloads
+$ reboot              # to enable configs
+$ ~/post-install.sh   # setup KDE theme & dotfiles
 ```
 
 # Troubleshooting
- 
+
 - [Dotfiles: Best Way to Store in a Bare Git Repository](https://www.atlassian.com/git/tutorials/dotfiles)
