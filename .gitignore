@@ -9,6 +9,9 @@
 !.github/**
 !.gitconfig
 
+# my wallpapers
+!Pictures/Wallpapers/**
+
 # konsave KDE Plasma config files
 !.config/konsave/**
 
