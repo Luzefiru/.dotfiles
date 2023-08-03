@@ -61,8 +61,8 @@ These are the `Settings > Keyboard Shortcuts` I use, heavily inspired by `bspwm`
 | ----------------------------------- | -------------------------------------------------- |
 | <kbd>Meta</kbd> + <kbd>→</kbd>      | Tiles a window to the right.                       |
 | <kbd>Meta</kbd> + <kbd>←</kbd>      | Tiles a window to the left.                        |
-| <kbd>Meta</kbd> + <kbd>&rsqb;</kbd> | Siwtches to the next virtual desktop on the right. |
-| <kbd>Meta</kbd> + <kbd>&lsqb;</kbd> | Siwtches to the next virtual desktop on the left.  |
+| <kbd>Meta</kbd> + <kbd>&rsqb;</kbd> | Switches to the next virtual desktop on the right. |
+| <kbd>Meta</kbd> + <kbd>&lsqb;</kbd> | Switches to the next virtual desktop on the left.  |
 
 # Troubleshooting
 
