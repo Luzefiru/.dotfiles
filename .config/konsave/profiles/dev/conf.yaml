@@ -68,7 +68,19 @@ save:
             # CUSTOM ~/.config FILES
             - neofetch
 
-    home-configs:
+    share_folder:
+        location: "$SHARE_DIR"
+        entries:
+            - plasma
+            - kwin
+            - konsole
+            - fonts
+            - color-schemes
+            - aurorae
+            - icons
+            - wallpapers
+
+    home_configs:
         location: "$HOME"
         entries:
             - .bashrc
