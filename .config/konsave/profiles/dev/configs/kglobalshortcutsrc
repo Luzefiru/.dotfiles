@@ -6,6 +6,12 @@ switch-to-activity-f5bc0fa3-b4b3-487b-8438-c9e92e71a416=none,none,Switch to acti
 Switch to Next Keyboard Layout=Meta+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[brave-browser.desktop]
+_k_friendly_name=Brave Web Browser
+_launch=none,none,Brave Web Browser
+new-private-window=none,none,New Incognito Window
+new-window=Meta+W,none,New Window
+
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -45,7 +51,7 @@ _k_friendly_name=Session Management
 [kwin]
 Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention
 Decrease Opacity=none,,Decrease Opacity of Active Window by 5%
-Edit Tiles=Meta+T,Meta+T,Toggle Tiles Editor
+Edit Tiles=none,Meta+T,Toggle Tiles Editor
 Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
 ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
@@ -58,15 +64,34 @@ MoveZoomDown=none,none,Move Zoomed Area Downwards
 MoveZoomLeft=none,none,Move Zoomed Area to Left
 MoveZoomRight=none,none,Move Zoomed Area to Right
 MoveZoomUp=none,none,Move Zoomed Area Upwards
-Overview=Meta+W,Meta+W,Toggle Overview
+Overview=none,Meta+W,Toggle Overview
+PoloniumCycleLayouts=Meta+\\\\,none,Polonium: Cycle layouts
+PoloniumFocusAbove=Meta+K,none,Polonium: Focus Above
+PoloniumFocusBelow=Meta+J,none,Polonium: Focus Below
+PoloniumFocusLeft=Meta+H,none,Polonium: Focus Left
+PoloniumFocusRight=none,none,Polonium: Focus Right
+PoloniumInsertAbove=Meta+Shift+K,none,Polonium: Insert Above
+PoloniumInsertBelow=Meta+Shift+J,none,Polonium: Insert Below
+PoloniumInsertLeft=Meta+Shift+H,none,Polonium: Insert Left
+PoloniumInsertRight=Meta+Shift+L,none,Polonium: Insert Right
+PoloniumRebuildLayout=Meta+Ctrl+Space,none,Polonium: Rebuild Layout
+PoloniumResizeTileDown=Meta+Shift+Down,none,Polonium: Resize Tile Down
+PoloniumResizeTileLeft=none,none,Polonium: Resize Tile Left
+PoloniumResizeTileRight=none,none,Polonium: Resize Tile Right
+PoloniumResizeTileUp=Meta+Shift+Up,none,Polonium: Resize Tile Up
+PoloniumRetileWindow=none,none,Polonium: Untile/Retile Window
+PoloniumSwapAbove=Meta+Ctrl+K,none,Polonium: Swap Above
+PoloniumSwapBelow=Meta+Ctrl+J,none,Polonium: Swap Below
+PoloniumSwapLeft=Meta+Ctrl+H,none,Polonium: Swap Left
+PoloniumSwapRight=Meta+Ctrl+L,none,Polonium: Swap Right
 Setup Window Shortcut=none,,Setup Window Shortcut
-Show Desktop=Meta+D,Meta+D,Peek at Desktop
+Show Desktop=none,Meta+D,Peek at Desktop
 ShowDesktopGrid=Meta+F8,Meta+F8,Show Desktop Grid
 Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Suspend Compositing
 Switch One Desktop Down=none,Meta+Ctrl+Down,Switch One Desktop Down
 Switch One Desktop Up=none,Meta+Ctrl+Up,Switch One Desktop Up
-Switch One Desktop to the Left=none,Meta+Ctrl+Left,Switch One Desktop to the Left
-Switch One Desktop to the Right=none,Meta+Ctrl+Right,Switch One Desktop to the Right
+Switch One Desktop to the Left=Meta+[,Meta+Ctrl+Left,Switch One Desktop to the Left
+Switch One Desktop to the Right=Meta+],Meta+Ctrl+Right,Switch One Desktop to the Right
 Switch Window Down=Meta+Alt+Down,Meta+Alt+Down,Switch to Window Below
 Switch Window Left=Meta+Alt+Left,Meta+Alt+Left,Switch to Window to the Left
 Switch Window Right=Meta+Alt+Right,Meta+Alt+Right,Switch to Window to the Right
@@ -123,7 +148,7 @@ Walk Through Windows of Current Application Alternative=none,,Walk Through Windo
 Walk Through Windows of Current Application Alternative (Reverse)=none,,Walk Through Windows of Current Application Alternative (Reverse)
 Window Above Other Windows=none,,Keep Window Above Others
 Window Below Other Windows=none,,Keep Window Below Others
-Window Close=Alt+F4,Alt+F4,Close Window
+Window Close=Meta+Q,Alt+F4,Close Window
 Window Fullscreen=none,,Make Window Fullscreen
 Window Grow Horizontal=none,,Expand Window Horizontally
 Window Grow Vertical=none,,Expand Window Vertically
@@ -218,10 +243,16 @@ _launch=Meta+E,Meta+E,Dolphin
 _k_friendly_name=KCalc
 _launch=Launch (1),Launch (1),KCalc
 
+[org.kde.konsole.desktop]
+NewTab=none,none,Open a New Tab
+NewWindow=none,none,Open a New Window
+_k_friendly_name=Konsole
+_launch=Meta+Return,Ctrl+Alt+T,Konsole
+
 [org.kde.krunner.desktop]
-RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
+RunClipboard=Meta+Shift+Space,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=Alt+Space\tAlt+F2\tSearch,Alt+Space\tAlt+F2\tSearch,KRunner
+_launch=Meta+Space,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
@@ -231,11 +262,11 @@ _launch=Meta+.\tMeta+Ctrl+Alt+Shift+Space,Meta+.\tMeta+Ctrl+Alt+Shift+Space,Emoj
 ActiveWindowScreenShot=Meta+Print,Meta+Print,Capture Active Window
 CurrentMonitorScreenShot=none,none,Capture Current Monitor
 FullScreenScreenShot=Shift+Print,Shift+Print,Capture Entire Desktop
-OpenWithoutScreenshot=none,none,Launch without taking a screenshot
+OpenWithoutScreenshot=none,none,Launch Spectacle without capturing
 RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangular Region
 WindowUnderCursorScreenShot=Meta+Ctrl+Print,Meta+Ctrl+Print,Capture Window Under Cursor
 _k_friendly_name=Spectacle
-_launch=Print,Print,Spectacle
+_launch=Print,Print,Launch Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -263,15 +294,16 @@ activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 3=Alt+F1,none,Activate Application Launcher Widget
+activate widget 37=Meta+D,none,Activate Minimize All Windows Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
 cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
 edit_clipboard=none,,Edit Contents…
-manage activities=Meta+Q,Meta+Q,Show Activity Switcher
-next activity=Meta+Tab,none,Walk through activities
-previous activity=Meta+Shift+Tab,none,Walk through activities (Reverse)
+manage activities=none,Meta+Q,Show Activity Switcher
+next activity=Meta+Tab,Meta+Tab,Walk through activities
+previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Walk through activities (Reverse)
 repeat_action=Meta+Ctrl+R,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Show Desktop
 show-barcode=none,,Show Barcode…

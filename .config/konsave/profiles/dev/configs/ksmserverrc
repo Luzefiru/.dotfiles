@@ -1,2 +1,19 @@
 [$Version]
 update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=1074343830000169104207100000014680005
+clientId2=1074343830000169104320400000014680020
+count=2
+discardCommand2[$e]=rm,$HOME/.config/session/systemsettings_1074343830000169104320400000014680020_1691043435_147076
+program1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier
+program2=/usr/bin/systemsettings
+restartCommand1=/usr/lib/x86_64-linux-gnu/libexec/DiscoverNotifier,-session,1074343830000169104207100000014680005_1691043435_147055
+restartCommand2=/usr/bin/systemsettings,-session,1074343830000169104320400000014680020_1691043435_147076
+restartStyleHint1=0
+restartStyleHint2=0
+userId1=zefiru
+userId2=zefiru

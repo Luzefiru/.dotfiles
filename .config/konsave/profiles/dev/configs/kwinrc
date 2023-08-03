@@ -3,7 +3,14 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 
 [Desktops]
 Id_1=ae026c94-8748-41c2-a2ca-062445bfe6d8
-Number=1
+Id_2=45f7f938-fd41-4097-9430-d5d326a41118
+Id_3=60a3d25f-61bf-44c2-9a2f-e262f8ba60e4
+Id_4=28e80563-e148-459d-a9b2-da17d2bf9623
+Name_1=Desktop
+Name_2=Web
+Name_3=Code
+Name_4=Media
+Number=4
 Rows=1
 
 [Effect-desktopgrid]
@@ -12,8 +19,17 @@ LayoutMode=1
 [Effect-presentwindows]
 LayoutMode=1
 
+[Effect-windowview]
+BorderActivateAll=1
+
+[Plugins]
+poloniumEnabled=true
+
 [Tiling]
 padding=4
 
 [Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"horizontal","tiles":[]}
+
+[org.kde.kdecoration2]
+theme=__aurorae__svg__ChromeOS-dark

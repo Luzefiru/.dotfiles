@@ -16,12 +16,25 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][1][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][1][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=559
+ToolBoxButtonY=30
+
+[Containments][1][Wallpaper][org.kde.image][General]
+Image=/home/zefiru/Pictures/Wallpapers/Battle_Elf.jpg
+SlidePaths=/home/zefiru/.local/share/wallpapers/,/usr/share/plasma/wallpapers/,/usr/share/wallpapers/
+
 [Containments][2]
 activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
 
@@ -29,9 +42,38 @@ wallpaperplugin=org.kde.image
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
-[Containments][2][Applets][21]
+[Containments][2][Applets][20][Configuration]
+PreloadWeight=60
+popupHeight=450
+popupWidth=396
+
+[Containments][2][Applets][20][Configuration][Appearance]
+autoFontAndSize=false
+dateDisplayFormat=BesideTime
+fontFamily=FiraMono Nerd Font Mono
+fontSize=6
+fontStyleName=Medium
+fontWeight=57
+
+[Containments][2][Applets][20][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][2][Applets][26]
 immutability=1
-plugin=org.kde.plasma.minimizeall
+plugin=org.kde.plasma.appmenu
+
+[Containments][2][Applets][26][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][2][Applets][28]
+immutability=1
+plugin=org.kde.plasma.marginsseparator
+
+[Containments][2][Applets][29]
+immutability=1
+plugin=org.kde.plasma.panelspacer
 
 [Containments][2][Applets][3]
 immutability=1
@@ -40,7 +82,11 @@ plugin=org.kde.plasma.kickoff
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=100
 popupHeight=514
-popupWidth=651
+popupWidth=677
+
+[Containments][2][Applets][3][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][2][Applets][3][Configuration][Configuration/General]
 showAppsByName=true
@@ -54,6 +100,24 @@ global=Alt+F1
 [Containments][2][Applets][3][Shortcuts]
 global=Alt+F1
 
+[Containments][2][Applets][33]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][2][Applets][37]
+immutability=1
+plugin=org.kde.plasma.minimizeall
+
+[Containments][2][Applets][37][Configuration]
+PreloadWeight=100
+
+[Containments][2][Applets][37][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][2][Applets][37][Shortcuts]
+global=Meta+D
+
 [Containments][2][Applets][4]
 immutability=1
 plugin=org.kde.plasma.pager
@@ -62,27 +126,35 @@ plugin=org.kde.plasma.pager
 immutability=1
 plugin=org.kde.plasma.icontasks
 
-[Containments][2][Applets][6]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
+[Containments][2][Applets][5][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][2][Applets][5][Configuration][General]
+fill=false
+launchers=
 
 [Containments][2][Applets][7]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=75
+PreloadWeight=100
 SystrayContainmentId=8
 
+[Containments][2][ConfigDialog]
+DialogHeight=84
+DialogWidth=1920
+
 [Containments][2][General]
-AppletOrder=3;4;5;6;7;20;21
+AppletOrder=3;28;4;5;29;26;33;20;37;7
 
 [Containments][8]
 activityId=
 formfactor=2
 immutability=1
 lastScreen=0
-location=4
+location=3
 plugin=org.kde.plasma.private.systemtray
 popupHeight=432
 popupWidth=432
@@ -111,6 +183,9 @@ plugin=org.kde.plasma.keyboardlayout
 [Containments][8][Applets][15]
 immutability=1
 plugin=org.kde.plasma.notifications
+
+[Containments][8][Applets][15][Configuration]
+PreloadWeight=55
 
 [Containments][8][Applets][16]
 immutability=1
@@ -148,18 +223,36 @@ plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][25]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.plasma.bluetooth
 
 [Containments][8][Applets][25][Configuration]
 PreloadWeight=34
+
+[Containments][8][Applets][34]
+immutability=1
+plugin=com.github.zren.alphablackcontrol
+
+[Containments][8][Applets][34][Configuration]
+PreloadWeight=70
+
+[Containments][8][Applets][38]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][8][Applets][38][Configuration]
+PreloadWeight=26
 
 [Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.vault
 
+[Containments][8][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][8][General]
-extraItems=org.kde.plasma.vault,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.kupapplet,org.kde.plasma.keyboardindicator,org.kde.kdeconnect,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.volume
-knownItems=org.kde.plasma.vault,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.kupapplet,org.kde.plasma.keyboardindicator,org.kde.kdeconnect,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.volume
+extraItems=org.kde.plasma.vault,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.kupapplet,org.kde.plasma.keyboardindicator,org.kde.kdeconnect,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.volume,com.github.zren.alphablackcontrol
+knownItems=org.kde.plasma.vault,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.kupapplet,org.kde.plasma.keyboardindicator,org.kde.kdeconnect,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.battery,org.kde.kscreen,org.kde.plasma.devicenotifier,org.kde.plasma.volume,com.github.zren.alphablackcontrol
 
 [ScreenMapping]
 itemsOnDisabledScreens=

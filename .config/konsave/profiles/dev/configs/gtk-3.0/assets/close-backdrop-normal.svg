@@ -7,11 +7,16 @@
 </defs>
 <g fill="none" stroke="black" stroke-width="1" fill-rule="evenodd" stroke-linecap="square" stroke-linejoin="bevel" >
 
-<g fill="none" stroke="#707d8a" stroke-opacity="1" stroke-width="1.01" stroke-linecap="round" stroke-linejoin="miter" stroke-miterlimit="2" transform="matrix(2.5,0,0,2.5,2.5,2.5)"
+<g fill="#000000" fill-opacity="1" stroke="none" transform="matrix(2.27273,0,0,2.27273,0,0)"
 font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
->
-<polyline fill="none" vector-effect="none" points="5,5 13,13 " />
-<polyline fill="none" vector-effect="none" points="13,5 5,13 " />
+opacity="0.000300006" >
+<rect x="0" y="0" width="22" height="22"/>
+</g>
+
+<g fill="#dfdfdf" fill-opacity="1" stroke="none" transform="matrix(2.27273,0,0,2.27273,-159.091,-2.27273)"
+font-family="Noto Sans" font-size="10" font-weight="400" font-style="normal" 
+opacity="0.3" >
+<path vector-effect="none" fill-rule="nonzero" d="M76,7 L76,8.41406 L79.5859,12 L76,15.5859 L76,17 L77.4141,17 L81,13.4141 L84.5859,17 L86,17 L86,15.5859 L82.4141,12 L86,8.41406 L86,7 L84.5859,7 L81,10.5859 L77.4141,7 L76,7"/>
 </g>
 
 <g fill="none" stroke="#000000" stroke-opacity="1" stroke-width="1" stroke-linecap="square" stroke-linejoin="bevel" transform="matrix(1,0,0,1,0,0)"
