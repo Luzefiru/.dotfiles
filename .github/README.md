@@ -4,19 +4,14 @@ A remote backup repository containing my KDE Plasma `~/.dotfiles`, along with a 
 
 # Table of Contents
 
-- [TODO](https://github.com/Luzefiru/.dotfiles/tree/main#todo)
 - [Installation](https://github.com/Luzefiru/.dotfiles/tree/main#installation)
 - [Themes](https://github.com/Luzefiru/.dotfiles/tree/main#themes)
 - [Keybinds](https://github.com/Luzefiru/.dotfiles/tree/main#keybinds)
   - [Essential Shortcuts](https://github.com/Luzefiru/.dotfiles#essential-shortcuts)
   - [Tiling & Workspaces](https://github.com/Luzefiru/.dotfiles#tiling--workspaces)
 - [Troubleshooting](https://github.com/Luzefiru/.dotfiles/tree/main#troubleshooting)
+- [TODO](https://github.com/Luzefiru/.dotfiles/tree/main#todo)
 - [Resources](https://github.com/Luzefiru/.dotfiles/tree/main#resources)
-
-# TODO
-
-- [ ] Create script to just download the Konsave profile & apply the theme after backing the old one up.
-- [ ] Split install script into knowledge domains and make it more modular for selecting packages & themes.
 
 # Installation
 
@@ -88,6 +83,11 @@ These are the `Settings > Keyboard Shortcuts` I use, heavily inspired by `bspwm`
 - Can I add my own selection of packages?
 
   > Of course. You can easily add them via the `.github/scripts/index.sh` file inside the Bash lists. I recommend forking your code and experimenting with the script yourself!
+
+# TODO
+
+- [ ] Create script to just download the Konsave profile & apply the theme after backing the old one up.
+- [ ] Split install script into knowledge domains and make it more modular for selecting packages & themes.
 
 # Resources
 
