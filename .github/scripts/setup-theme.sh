@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+THEME=dev # change this to the Konsave theme you want
 
 python3 -m venv ~/.venv
 source ~/.venv/bin/activate
