@@ -38,21 +38,7 @@ echo
 echo "[1] CORE SERVICES & UTILITIES"
 echo
 
-PKGS=(
-        'git'                   # version control & interaction with repositories
-        'rsync'                 # backup & SSH file transfer
-        'curl'                  # make client http requests for other installers
-        'wget'                  # same as above
-        'openssh'               # ssh daemon
-        'ca-certificates'       # certificate identity verification
-        'gpg'                   # GNU privacy guard keys
-        'apt-transport-https'   # access repositories with HTTPS
-)
-
-for PKG in "${PKGS[@]}"; do
-    echo "INSTALLING: ${PKG}"
-    sudo apt install -y "$PKG"
-done
+./setup-core.sh
 
 echo
 echo "Done!"
@@ -77,38 +63,7 @@ echo
 echo "[3] DEVELOPMENT ENVIRONMENT"
 echo
 
-echo "INSTALLING: code"
-# script taken from: https://brave.com/linux/#debian-ubuntu-mint
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
-sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
-rm -f packages.microsoft.gpg
-sudo apt update
-sudo apt install -y code
-
-echo "INSTALLING: docker"
-sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-sudo chmod a+r /etc/apt/keyrings/docker.gpg
-echo \
-  "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt update
-sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-PKGS=(
-        'nodejs'                # javascript runtime engine
-        'npm'                   # nodejs package manager
-        'python3'               # python interpreter
-        'python3-pip'           # python package manager
-        'python3-venv'          # python virtual environment management
-)
-
-for PKG in "${PKGS[@]}"; do
-    echo "INSTALLING: ${PKG}"
-    sudo apt install -y "$PKG"
-done
+./setup-dev.sh
 
 echo
 echo "Done!"
@@ -118,15 +73,7 @@ echo
 echo "[4] MISCELLANEOUS PACKAGES"
 echo
 
-PKGS=(
-        'neofetch'              # CLI system info
-        'cava'                  # CLI music visualizer
-)
-
-for PKG in "${PKGS[@]}"; do
-    echo "INSTALLING: ${PKG}"
-    sudo apt install -y "$PKG"
-done
+./setup-misc.sh
 
 echo
 echo "Done!"
@@ -146,22 +93,7 @@ echo
 echo "[6] CUSTOMIZING SHELL"
 echo
 
-PKGS=(
-        'zsh'              # zsh interpreter
-)
-
-for PKG in "${PKGS[@]}"; do
-    echo "INSTALLING: ${PKG}"
-    sudo apt install -y "$PKG"
-done
-
-echo "INSTALLING: oh-my-zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-echo "INSTALLING: oh-my-zsh plugins"
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-echo "INSTALLING: p10k"
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+./setup-zsh.sh
 
 echo
 echo "Done!"
@@ -171,23 +103,14 @@ echo
 echo "[7] DOWNLOADING KDE DESKTOP THEME & FONTS"
 echo
 
-python3 -m venv ~/.venv
-source ~/.venv/bin/activate
-python -m pip install konsave
-
-function dotfiles {
-   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
-}
-
-dotfiles pull
-dotfiles reset --hard
-
-konsave -a dev
-konsave -a $THEME               # Konsave theme
-fc-cache -f -v                  # refresh fonts
+./setup-theme.sh
 
 echo
 echo "Done!"
+echo
+
+echo
+echo "[8] CHANGE SHELL & MANUAL REBOOT"
 echo
 
 echo

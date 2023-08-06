@@ -13,7 +13,7 @@ A remote backup repository containing my `~/.dotfiles`, along with a guide to sp
 # TODO
 
 - [ ] Create script to just download the Konsave profile & apply the theme after backing the old one up.
-- [ ] Split install script into knowledge domains and make it more modular for selecting packages & themes.
+- [x] Split install script into knowledge domains and make it more modular for selecting packages & themes.
 
 # Installation
 
