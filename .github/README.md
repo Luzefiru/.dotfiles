@@ -13,11 +13,6 @@ A remote backup repository containing my KDE Plasma `~/.dotfiles`, along with a 
 - [TODO](https://github.com/Luzefiru/.dotfiles/tree/main#todo)
 - [Resources](https://github.com/Luzefiru/.dotfiles/tree/main#resources)
 
-# TODO
-
-- [ ] Create script to just download the Konsave profile & apply the theme after backing the old one up.
-- [ ] Split install script into knowledge domains and make it more modular for selecting packages & themes.
-
 # Installation
 
 Running the `install.sh` script will install multiple apt packages for my development workflow. Afterwards, it will download a [Konsave](https://github.com/Prayag2/konsave) profile with all my configuration files, fonts, and KDE Plasma settings.
@@ -87,7 +82,7 @@ These are the `Settings > Keyboard Shortcuts` I use, heavily inspired by `bspwm`
 
 - Can I add my own selection of packages?
 
-  > Of course. You can easily add them via the `.github/scripts/index.sh` file inside the Bash lists. I recommend forking your code and experimenting with the script yourself!
+  > Of course. You can easily add them via the `.github/scripts/setup-*.sh` file inside the `PKGS` lists. I recommend forking your code and experimenting with the script yourself!
 
 # TODO
 
