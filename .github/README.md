@@ -87,7 +87,7 @@ These are the `Settings > Keyboard Shortcuts` I use, heavily inspired by `bspwm`
 # TODO
 
 - [ ] Create script to just download the Konsave profile & apply the theme after backing the old one up.
-- [x] Split install script into knowledge domains and make it more modular for selecting packages & themes.
+- [ ] Edit script to pick what theme a user wants.
 
 # Resources
 
