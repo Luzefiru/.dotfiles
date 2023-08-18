@@ -41,13 +41,14 @@ These are the `Settings > Keyboard Shortcuts` I use, heavily inspired by `bspwm`
 
 | Key                                  | Function                                  |
 | ------------------------------------ | ----------------------------------------- |
+| <kbd>Meta</kbd> + <kbd>Enter</kbd>   | Launches Konsole.                         |
 | <kbd>Meta</kbd> + <kbd>Space</kbd>   | Launches Krunner.                         |
 | <kbd>Meta</kbd> + <kbd>Q</kbd>       | Closes a window.                          |
 | <kbd>Meta</kbd> + <kbd>W</kbd>       | Launches Brave Browser.                   |
 | <kbd>Meta</kbd> + <kbd>E</kbd>       | Launches Dolphin.                         |
 | <kbd>Prt Sc</kbd>                    | Screenshots & launches Spectacle.         |
 | <kbd>Shift</kbd> + <kbd>Prt Sc</kbd> | Screenshots the entire screen.            |
-| <kbd>Super</kbd> + <kbd>Prt Sc</kbd> | Screenshots the currently focused window. |
+| <kbd>Meta</kbd> + <kbd>Prt Sc</kbd>  | Screenshots the currently focused window. |
 
 ### Tiling & Workspaces
 
@@ -64,9 +65,9 @@ These are the `Settings > Keyboard Shortcuts` I use, heavily inspired by `bspwm`
 
   > Anything that ins't a KDE configuration file should be stored in a `~/.dotfiles-backup/` directory.
 
-- What happened to my old KDE Plasma configuration?
+- What happened to my old KDE Plasma configuration files?
 
-  > Konsave overwrites the old profile, so it is most likely lost. Please back up your profile via Konsave if you plan to use my profiles as a standalone theme.
+  > Konsave saves it as a profile called `backup` which you can reapply with `konsave -a backup`. I can't guarantee that your configuration will be fully restored, so back it up manually just in case.
 
 - How do I use Konsave in my terminal?
 
@@ -86,7 +87,6 @@ These are the `Settings > Keyboard Shortcuts` I use, heavily inspired by `bspwm`
 
 # TODO
 
-- [ ] Create script to just download the Konsave profile & apply the theme after backing the old one up.
 - [ ] Edit script to pick what theme a user wants.
 
 # Resources
