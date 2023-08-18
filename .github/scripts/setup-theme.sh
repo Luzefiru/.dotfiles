@@ -13,4 +13,5 @@ dotfiles pull
 dotfiles reset --hard
 
 konsave -a $THEME               # Konsave theme
+konsave -s backup               # Backs up previous setup to a Konsave profile
 fc-cache -f -v                  # refresh fonts
