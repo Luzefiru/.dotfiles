@@ -17,7 +17,3 @@
 
 # fonts
 !.local/share/fonts/*
-
-# konsole themes
-!.local/share/konsole/*
-!.config/konsolerc
