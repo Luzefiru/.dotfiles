@@ -38,3 +38,6 @@ echo "Setting up JAVA_HOME env variable in /etc/environment..."
 sudo chmod 777 /etc/environment
 sudo echo "JAVA_HOME=\"/usr/lib/jvm/default-java\"" >> /etc/environment
 sudo chmod 644 /etc/environment
+
+echo "INSTALLING: netbeans (snap)"
+sudo snap install netbeans --classic
