@@ -26,9 +26,15 @@ PKGS=(
         'python3'               # python interpreter
         'python3-pip'           # python package manager
         'python3-venv'          # python virtual environment management
+        'default-jdk'           # java dev kit with the jre
 )
 
 for PKG in "${PKGS[@]}"; do
     echo "INSTALLING: ${PKG}"
     sudo apt install -y "$PKG"
 done
+
+echo "Setting up JAVA_HOME env variable in /etc/environment..."
+sudo chmod 777 /etc/environment
+sudo echo "JAVA_HOME=\"/usr/lib/jvm/default-java\"" >> /etc/environment
+sudo chmod 644 /etc/environment
