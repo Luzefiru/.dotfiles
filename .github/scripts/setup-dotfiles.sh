@@ -39,6 +39,9 @@ echo
 echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc && echo "Successfully created alias dotfiles in $HOME/.bashrc"
 echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc && echo "Successfully created alias dotfiles in $HOME/.zshrc"
 
+# add zsh kubectl autocompletion
+echo '[[ $commands[kubectl] ]] && source <(kubectl completion zsh)' >> $HOME/.zshrc
+
 # TODO: fix problematic code and enable smooth transition to zsh at end of script
 source .bashrc
 source .zshrc   # will fail because we haven't installed oh-my-zsh and p10k yet, need to reboot
