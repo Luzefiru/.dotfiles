@@ -116,3 +116,7 @@ alias dotfiles='/usr/bin/git --git-dir=/home/zefiru/.dotfiles/ --work-tree=/home
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# kubectl alias & autocompletion taken from: https://spacelift.io/blog/kubectl-auto-completion
+alias k=kubectl
+complete -o default -F __start_kubectl k
